@@ -52,8 +52,50 @@
     
 
     
-<header>
-    <img src="Gemini_Generated_Image_us2c3hus2c3hus2c.jpeg" style="max-width: 28%;">
+    <script>
+        
+  // Create a video element
+const video = document.createElement('video');
+
+// Set video source to the provided link
+video.src = 'https://github.com/MysticWaveTech/NASATerraformingConvention/raw/refs/heads/main/63bf24e4-1dae-4ba9-9d20-12ae4d4de51e.mp4';
+
+// Set video attributes for controls, autoplay, and loop
+video.controls = true; // Add controls for the user
+video.loop = true; // Loop the video
+
+// Set styles for the video
+video.style.position = 'absolute';
+video.style.top = '20%'; // Center vertically
+video.style.left = '50%'; // Align to the right edge of the screen
+video.style.width = '50%'; // Full width to maintain aspect ratio
+video.style.height = 'auto'; // Maintain aspect ratio
+video.style.transform = 'translate(-50%, -50%) rotate(89deg)'; // Move left by half its width and center vertically
+
+// Append the video to the body or another container
+document.body.appendChild(video);
+
+// Play the video when the user interacts with the video element
+video.addEventListener('click', function() {
+    if (video.paused) {
+        video.play(); // Play the video if it's paused
+    } else {
+        video.pause(); // Pause the video if it's playing
+    }
+});
+
+// Optional: Automatically play the video on page load
+window.addEventListener('load', () => {
+    video.play().catch(error => {
+        console.log('Autoplay failed: User interaction is required to play the video.');
+    });
+});
+    </script>
+    
+
+    
+<header style="margin-top: 500px;">
+    <img src="Gemini_Generated_Image_us2c3hus2c3hus2c.jpeg" style="max-width: 58%;">
     <h1>NASA Terraforming Convention 2024</h1>
     <p>Exploring New Frontiers through Collective Consciousness</p>
 </header>
@@ -87,11 +129,7 @@
 
 </div>
     
-    <iframe src="psyops.html" width="800" height="600" frameborder="10" allowfullscreen>
-        
-        
-        
-    </iframe>
+    
     
     
     

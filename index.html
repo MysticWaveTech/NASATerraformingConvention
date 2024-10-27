@@ -48,21 +48,24 @@
         }
     </style>
 </head>
-<body><style>
+<body>
     
-    video {
-            max-width: 100%;
-            height: auto;
-            transform: rotate(90deg); /* Rotate the video 90 degrees */
-            transform-origin: left top; /* Adjust the origin for proper positioning */
-            margin-left: 100%; /* Adjust to keep it visible */
-        }
-    </style>
-    
-</style>
-      <source src="path/to/63bf24e4-1dae-4ba9-9d20-12ae4d4de51e.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    <video autoplay controls loop id="myVideo">
+        
+        <source src="https://github.com/MysticWaveTech/NASATerraformingConvention/raw/refs/heads/main/63bf24e4-1dae-4ba9-9d20-12ae4d4de51e.mp4"><style> video { transform: rotate(90deg); height: 400px;} </style> 
+        <script> const videoElement = document.querySelector("video"); // Delay the autoplay by a few seconds setTimeout(() => { videoElement.play(); }, 2000); // Adjust the delay as needed 
+        
+        document.addEventListener('DOMContentLoaded', (event) => {
+    const video = document.getElementById('myVideo');
+    video.play().catch((error) => {
+        console.error('Error attempting to play:', error);
+    });
+});
+        </script>
+        </source>
+        
     </video>
+    
 <header>
     <img src="Gemini_Generated_Image_us2c3hus2c3hus2c.jpeg" style="max-width: 28%;">
     <h1>NASA Terraforming Convention 2024</h1>
